@@ -39,7 +39,7 @@ const fetchData=()=>{
   return (
     <div className="App" style={{backgroundColor:color}}>
         <div id='quote-box'>
-          <div>{!isLoading?<img src={quotes.image}/>:<>Loading...</>}</div>
+          <div>{!isLoading?<img src={quotes.image} alt="character"/>:<>Loading...</>}</div>
 
           <div>
             <div id='text'>
@@ -56,7 +56,7 @@ const fetchData=()=>{
                 onClick={()=>fetchData()}
                  style={{color:color}}><strong>new quote</strong></button>
                 </div>
-              <div><a id='tweet-quote' href='https://twitter.com/intent/tweet' target="_blank">go to tweeter</a></div>
+              <div><a id='tweet-quote' href='https://twitter.com/intent/tweet' >go to tweeter</a></div>
             </div>
           </div>
 
